@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Surcos</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section {
+            scroll-margin-top: 10rem;
+        }
+        /* Hide scrollbar for sections */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+    </style>
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header y Navegación -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-lg rounded-b-xl">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between">
+            <!-- Logo y nombre -->
+            <div class="flex-grow flex justify-center md:justify-start mb-4 md:mb-0">
+                <img src="https://placehold.co/200x60/3CB371/ffffff?text=ONG+Surcos" alt="Logo de ONG Surcos" class="h-14 w-auto rounded-lg">
+            </div>
+            <!-- Íconos de RRSS y Contacto -->
+            <div class="flex items-center space-x-6 mr-0 md:mr-4">
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">
+                    <i class="fab fa-facebook-square text-3xl"></i>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-pink-600 transition duration-300">
+                    <i class="fab fa-instagram-square text-3xl"></i>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-green-500 transition duration-300">
+                    <i class="fab fa-whatsapp-square text-3xl"></i>
+                </a>
+                <a href="#contacto" class="text-gray-600 hover:text-green-700 transition duration-300">
+                    <i class="fas fa-address-book text-3xl"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Menú de navegación -->
+        <nav class="bg-green-100 py-3 rounded-b-xl">
+            <div class="container mx-auto px-4">
+                <ul class="flex flex-wrap justify-center text-center space-x-2 md:space-x-4">
+                    <li><a href="#home" class="px-3 py-2 text-green-800 font-semibold hover:bg-green-200 rounded-full transition duration-300 whitespace-nowrap">HOME</a></li>
+                    <li><a href="#organigrama" class="px-3 py-2 text-green-800 font-semibold hover:bg-green-200 rounded-full transition duration-300 whitespace-nowrap">Organigrama</a></li>
+                    <li><a href="#sedes" class="px-3 py-2 text-green-800 font-semibold hover:bg-green-200 rounded-full transition duration-300 whitespace-nowrap">Sedes</a></li>
+                    <li><a href="#transparencia" class="px-3 py-2 text-green-800 font-semibold hover:bg-green-200 rounded-full transition duration-300 whitespace-nowrap">Transparencia</a></li>
+                    <li><a href="#noticias" class="px-3 py-2 text-green-800 font-semibold hover:bg-green-200 rounded-full transition duration-300 whitespace-nowrap">Noticias</a></li>
+                    <li><a href="#centro-documentacion" class="px-3 py-2 text-green-800 font-semibold hover:bg-green-200 rounded-full transition duration-300 whitespace-nowrap">Documentación</a></li>
+                    <li><a href="#contacto" class="px-3 py-2 text-green-800 font-semibold hover:bg-green-200 rounded-full transition duration-300 whitespace-nowrap">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="pt-40">
+        <!-- HOME Section -->
+        <section id="home" class="section container mx-auto px-4 py-8 md:py-16">
+            <div class="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0 lg:space-x-8">
+                <!-- Cuadro Izquierdo -->
+                <div class="w-full lg:w-1/2 p-6 bg-white rounded-lg shadow-lg">
+                    <h1 class="text-3xl md:text-4xl font-bold text-green-700 mb-4">ONG Surcos</h1>
+                    <p class="text-lg text-gray-600 leading-relaxed">Surcos, (u Organización No Gubernamental para el desarrollo social del niño/a, el joven y su familia, Surcos), es una Corporación de derecho privado, sin fines de lucro, con personería jurídica Nº 739, otorgada por el Ministerio de Justicia el 7 de septiembre del 1999, con domicilio en calle Compañía #1389 – oficina 32, comuna de Santiago.</p>
+                </div>
+                <!-- Cuadro Derecho con imagen -->
+                <div class="w-full lg:w-1/2 rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/800x600/6A5ACD/ffffff?text=FotoHome.jpg" alt="Foto de grupo en ONG Surcos" class="w-full h-full object-cover rounded-lg">
+                </div>
+            </div>
+            <!-- Visión y Misión -->
+            <div class="w-full mt-12 p-8 bg-white rounded-lg shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-green-700 mb-4">Visión y Misión</h2>
+                <p class="text-lg text-gray-600 mb-4 leading-relaxed">
+                    <strong class="font-bold">ONG Surcos</strong> es una institución de amplia trayectoria y experiencia como Organismo colaborador del Servicio, con presencia en distintas comunas de la Región Metropolitana. Actualmente tiene la responsabilidad de liderar la gestión de Programas de Prevención Focalizada 24 horas en las comunas de San Bernardo, El Bosque, Maipú, Lo Espejo, Lo Prado y Estación Central. Dichos proyectos tienen el objetivo de “fortalecer las habilidades y competencias de cuidado y crianza de familias y/o adultos significativos de niños, niñas y adolescentes de manera de restituir a estos últimos, los derechos vulnerados, asociados a mediana complejidad, tales como negligencia moderada, testigo de violencia intrafamiliar no constitutiva de delito, maltrato físico y/o psicológico moderado, evitando su cronificación”. Nuestra institución mantiene una buena relación con el Servicio en los requerimientos Administrativos Contables como en lo Técnico Profesional, con resultados fehacientes y tácitos, así como también, libertad de acción que brinda reconocimiento social desde lo comunitario y validación dentro de los territorios donde se despliega sus acciones.
+                </p>
+                <p class="text-lg text-gray-600 mb-4 leading-relaxed">
+                    Nuestra visión es mejorar las condiciones de vida niños, niñas, jóvenes y sus respectivas familias de aquellos sectores vulnerables de la sociedad, promoviendo el desarrollo sustentable local, la libertad, la honestidad, el respeto, la responsabilidad, la autonomía y la solidaridad en el marco de la protección de los derechos humanos en general y los de infancia en particular, desde el trabajo de los roles parentales entre otros.
+                </p>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    La misión, es que cada una de las personas que se desempeñan en los programas de responsabilidad, esté basada en el compromiso y el trabajo que se realiza para los niños, niñas, jóvenes, las familias y las comunidades con el objeto de apoyar su desarrollo sustentable, acompañar procesos de aprendizaje que les permita dar respuesta a sus necesidades de forma sana y satisfactorias, respetando su propia identidad y apoyando el fortalecimiento y desarrollo de sus potencialidades. Se brinda atención Psicosocial acompañando la atención en la red comunitaria, orientando y conteniendo procesos de crecimiento y fortalecimiento personal, familiar y grupal en un espacio de protección, orientación, participación y desarrollo personal donde se puedan prevenir y corregir las conductas adquiridas conducentes al riesgo social.
+                </p>
+            </div>
+        </section>
+
+        <!-- Organigrama Section -->
+        <section id="organigrama" class="section container mx-auto px-4 py-8 md:py-16 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-green-700 mb-8">Organigrama</h2>
+            <div class="flex justify-center p-6 bg-white rounded-lg shadow-lg">
+                <img src="https://placehold.co/800x800/2E8B57/ffffff?text=Organigrama.png" alt="Organigrama de la ONG Surcos" class="max-w-full h-auto rounded-lg">
+            </div>
+        </section>
+
+        <!-- Sedes Section -->
+        <section id="sedes" class="section container mx-auto px-4 py-8 md:py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-green-700 mb-8 text-center">Nuestras Sedes</h2>
+            <p class="w-full text-lg text-gray-600 text-center mb-8">Conoce las distintas sedes de la ONG Surcos a lo largo de la Región Metropolitana. Cada una de ellas trabaja para fortalecer las comunidades locales y brindar apoyo a quienes más lo necesitan.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- 12 Cards de Sedes -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/400x300/4682B4/ffffff?text=Sede+1" alt="Sede 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Sede San Bernardo</h3>
+                        <p class="text-gray-600">Texto descriptivo de la sede, incluyendo dirección y programas. Se puede editar después.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/400x300/4682B4/ffffff?text=Sede+2" alt="Sede 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Sede El Bosque</h3>
+                        <p class="text-gray-600">Texto descriptivo de la sede, incluyendo dirección y programas. Se puede editar después.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/400x300/4682B4/ffffff?text=Sede+3" alt="Sede 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Sede Maipú</h3>
+                        <p class="text-gray-600">Texto descriptivo de la sede, incluyendo dirección y programas. Se puede editar después.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/400x300/4682B4/ffffff?text=Sede+4" alt="Sede 4" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Sede Lo Espejo</h3>
+                        <p class="text-gray-600">Texto descriptivo de la sede, incluyendo dirección y programas. Se puede editar después.</p>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/400x300/4682B4/ffffff?text=Sede+5" alt="Sede 5" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Sede Lo Prado</h3>
+                        <p class="text-gray-600">Texto descriptivo de la sede, incluyendo dirección y programas. Se puede editar después.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/400x300/4682B4/ffffff?text=Sede+6" alt="Sede 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Sede Estación Central</h3>
+                        <p class="text-gray-600">Texto descriptivo de la sede, incluyendo dirección y programas. Se puede editar después.</p>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/400x300/4682B4/ffffff?text=Sede+7" alt="Sede 7" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Sede Santiago</h3>
+                        <p class="text-gray-600">Texto descriptivo de la sede, incluyendo dirección y programas. Se puede editar después.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/400x300/4682B4/ffffff?text=Sede+8" alt="Sede 8" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Sede La Florida</h3>
+                        <p class="text-gray-600">Texto descriptivo de la sede, incluyendo dirección y programas. Se puede editar después.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/400x300/4682B4/ffffff?text=Sede+9" alt="Sede 9" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Sede Puente Alto</h3>
+                        <p class="text-gray-600">Texto descriptivo de la sede, incluyendo dirección y programas. Se puede editar después.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/400x300/4682B4/ffffff?text=Sede+10" alt="Sede 10" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Sede La Cisterna</h3>
+                        <p class="text-gray-600">Texto descriptivo de la sede, incluyendo dirección y programas. Se puede editar después.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/400x300/4682B4/ffffff?text=Sede+11" alt="Sede 11" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Sede Providencia</h3>
+                        <p class="text-gray-600">Texto descriptivo de la sede, incluyendo dirección y programas. Se puede editar después.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/400x300/4682B4/ffffff?text=Sede+12" alt="Sede 12" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Sede Quilicura</h3>
+                        <p class="text-gray-600">Texto descriptivo de la sede, incluyendo dirección y programas. Se puede editar después.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transparencia Section -->
+        <section id="transparencia" class="section container mx-auto px-4 py-8 md:py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-green-700 mb-8 text-center">Transparencia</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Menú 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/D3D3D3/000000?text=Documentos+Financieros" alt="Icono de documentos financieros" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700 cursor-pointer" onclick="toggleMenu('menu1')">
+                            Documentos Financieros
+                            <i class="fas fa-chevron-down ml-2 transition-transform duration-300 transform" id="arrow1"></i>
+                        </h3>
+                        <ul id="menu1" class="hidden mt-4 space-y-2">
+                            <li><a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank" class="text-gray-600 hover:text-green-700 hover:underline">Estados Financieros 2023</a></li>
+                            <li><a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank" class="text-gray-600 hover:text-green-700 hover:underline">Reporte de Auditoría Anual</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Menú 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/D3D3D3/000000?text=Gestión+Institucional" alt="Icono de gestión institucional" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700 cursor-pointer" onclick="toggleMenu('menu2')">
+                            Gestión Institucional
+                            <i class="fas fa-chevron-down ml-2 transition-transform duration-300 transform" id="arrow2"></i>
+                        </h3>
+                        <ul id="menu2" class="hidden mt-4 space-y-2">
+                            <li><a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank" class="text-gray-600 hover:text-green-700 hover:underline">Plan de Trabajo 2024</a></li>
+                            <li><a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank" class="text-gray-600 hover:text-green-700 hover:underline">Memoria Anual</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Menú 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/D3D3D3/000000?text=Políticas+y+Normativas" alt="Icono de políticas y normativas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700 cursor-pointer" onclick="toggleMenu('menu3')">
+                            Políticas y Normativas
+                            <i class="fas fa-chevron-down ml-2 transition-transform duration-300 transform" id="arrow3"></i>
+                        </h3>
+                        <ul id="menu3" class="hidden mt-4 space-y-2">
+                            <li><a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank" class="text-gray-600 hover:text-green-700 hover:underline">Código de Ética</a></li>
+                            <li><a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank" class="text-gray-600 hover:text-green-700 hover:underline">Estatutos de la Corporación</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Noticias Section -->
+        <section id="noticias" class="section container mx-auto px-4 py-8 md:py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-green-700 mb-8 text-center">Noticias</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Noticias -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/2E8B57/ffffff?text=Noticia+1" alt="Imagen de noticia 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Taller de Crianza Positiva</h3>
+                        <p class="text-gray-600">Acompañamos a las familias en la comuna de San Bernardo en un taller práctico para fortalecer las habilidades parentales y la comunicación asertiva. ¡Un gran éxito!</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/4682B4/ffffff?text=Noticia+2" alt="Imagen de noticia 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Jornada de Integración Comunitaria</h3>
+                        <p class="text-gray-600">Nuestra comunidad se unió en una jornada de limpieza y embellecimiento de espacios públicos, promoviendo el trabajo en equipo y el compromiso social.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/800080/ffffff?text=Noticia+3" alt="Imagen de noticia 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Deporte y Recreación para Niños</h3>
+                        <p class="text-gray-600">Organizamos un campeonato de fútbol para los más pequeños, fomentando la sana competencia y los valores como el respeto y la perseverancia.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/FFD700/000000?text=Noticia+4" alt="Imagen de noticia 4" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Taller de Arte y Expresión</h3>
+                        <p class="text-gray-600">En Maipú, los jóvenes exploraron su creatividad a través de la pintura y el dibujo, un espacio seguro para expresar sus emociones y desarrollar nuevas habilidades.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/A52A2A/ffffff?text=Noticia+5" alt="Imagen de noticia 5" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Jornada de Capacitación para Educadores</h3>
+                        <p class="text-gray-600">Nuestro equipo participó en una capacitación intensiva sobre las nuevas metodologías de intervención psicosocial para el trabajo en territorio.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/3CB371/ffffff?text=Noticia+6" alt="Imagen de noticia 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Actividades de Circo para la Familia</h3>
+                        <p class="text-gray-600">Las familias de Lo Prado disfrutaron de una tarde llena de juegos y habilidades de circo, uniendo a grandes y pequeños en un ambiente de alegría.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Centro de Documentación Section -->
+        <section id="centro-documentacion" class="section container mx-auto px-4 py-8 md:py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-green-700 mb-8 text-center">Centro de Documentación</h2>
+            <div class="relative w-full overflow-x-auto no-scrollbar py-4">
+                <div class="flex space-x-4">
+                    <!-- Miniaturas de Documentos -->
+                    <img src="https://placehold.co/150x200/4682B4/ffffff?text=Doc+1" alt="Documento 1" class="w-36 h-48 rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300" onclick="showPdfModal('https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf')">
+                    <img src="https://placehold.co/150x200/4682B4/ffffff?text=Doc+2" alt="Documento 2" class="w-36 h-48 rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300" onclick="showPdfModal('https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf')">
+                    <img src="https://placehold.co/150x200/4682B4/ffffff?text=Doc+3" alt="Documento 3" class="w-36 h-48 rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300" onclick="showPdfModal('https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf')">
+                    <img src="https://placehold.co/150x200/4682B4/ffffff?text=Doc+4" alt="Documento 4" class="w-36 h-48 rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300" onclick="showPdfModal('https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf')">
+                    <img src="https://placehold.co/150x200/4682B4/ffffff?text=Doc+5" alt="Documento 5" class="w-36 h-48 rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300" onclick="showPdfModal('https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf')">
+                    <img src="https://placehold.co/150x200/4682B4/ffffff?text=Doc+6" alt="Documento 6" class="w-36 h-48 rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300" onclick="showPdfModal('https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf')">
+                    <img src="https://placehold.co/150x200/4682B4/ffffff?text=Doc+7" alt="Documento 7" class="w-36 h-48 rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300" onclick="showPdfModal('https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf')">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto" class="section container mx-auto px-4 py-8 md:py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-green-700 mb-8 text-center">Contacto</h2>
+            <div class="bg-white p-8 rounded-lg shadow-lg max-w-2xl mx-auto">
+                <form onsubmit="event.preventDefault(); showContactMessage();">
+                    <div class="mb-4">
+                        <label for="nombre" class="block text-gray-700 font-semibold mb-2">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="telefono" class="block text-gray-700 font-semibold mb-2">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="asunto" class="block text-gray-700 font-semibold mb-2">Asunto</label>
+                        <select id="asunto" name="asunto" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                            <option value="">Selecciona un asunto</option>
+                            <option value="reclamo">Reclamo</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="consulta">Consulta General</option>
+                            <option value="colaboracion">Propuesta de Colaboración</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="mensaje" class="block text-gray-700 font-semibold mb-2">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-green-700 text-white font-bold py-3 rounded-lg hover:bg-green-800 transition-colors duration-300 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50">
+                        ENVIAR
+                    </button>
+                    <div id="contact-message" class="hidden mt-4 text-center text-green-700 font-semibold">
+                        ¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Modal for PDF Viewer -->
+        <div id="pdf-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-gray-900 bg-opacity-75 p-4">
+            <div class="relative bg-white rounded-lg shadow-xl overflow-hidden w-full max-w-3xl h-[80vh]">
+                <button class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 transition-colors duration-200 z-10" onclick="closePdfModal()">
+                    <i class="fas fa-times-circle text-3xl"></i>
+                </button>
+                <iframe id="pdf-iframe" src="" frameborder="0" class="w-full h-full"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Toggle for Transparencia menus
+        function toggleMenu(id) {
+            const menu = document.getElementById(id);
+            const arrow = document.getElementById(`arrow${id.slice(-1)}`);
+            menu.classList.toggle('hidden');
+            arrow.classList.toggle('rotate-180');
+        }
+
+        // PDF Modal
+        const pdfModal = document.getElementById('pdf-modal');
+        const pdfIframe = document.getElementById('pdf-iframe');
+
+        function showPdfModal(pdfUrl) {
+            pdfIframe.src = pdfUrl;
+            pdfModal.classList.remove('hidden');
+            pdfModal.classList.add('flex');
+        }
+
+        function closePdfModal() {
+            pdfModal.classList.add('hidden');
+            pdfModal.classList.remove('flex');
+            pdfIframe.src = ''; // Clear iframe to stop playback
+        }
+
+        // Contact form message
+        function showContactMessage() {
+            const messageBox = document.getElementById('contact-message');
+            messageBox.classList.remove('hidden');
+            setTimeout(() => {
+                messageBox.classList.add('hidden');
+            }, 5000); // Hide after 5 seconds
+        }
+    </script>
+</body>
+</html>
